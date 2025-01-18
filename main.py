@@ -1,6 +1,6 @@
 from random import choice
 
-def fuck_seat():
+def simulation():
     is_seat = [False] * 100
     remain_seat = [i for i in range(100)]
     
@@ -18,7 +18,7 @@ count = 100000
 success = 0
 fail = 0
 for i in range(count):
-    result = fuck_seat()
+    result = simulation()
     
     if result[0]:
         success += 1
